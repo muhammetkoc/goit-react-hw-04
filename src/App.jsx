@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { ClipLoader } from "react-spinners";
-import SearchBar from "./components/searchBar/searchBar";
+import SearchBar from "./components/SearchBar/SearchBar";
 import ImageGallery from "./components/ImageGallery/ImageGallery";
 import ImageModal from "./components/ImageModal/ImageModal";
 import LoadMore from "./components/LoadMore/LoadMore";
 import { getPhotos } from "./api";
-import './App.css'
+import './App.css';
+
 function App() {
+  
   const [search, setSearch] = useState("");
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null); 
